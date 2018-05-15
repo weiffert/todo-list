@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
+
 <body>
-    <h1>To do:</h1>
-    <div id="list">
-        <form>
+    <div id="valid">
+        <h1>To do:</h1>
+        <form></form>
+        <form id="input">
             <label for="todo"></label>
-            <input type="text" name="todo" placeholder="Do...">
+            <input type="text" name="todo" placeholder="Do..." required>
+        </form>
+    </div>
+    <div id="finished">
+        <h3>Finished:</h3>
+        <form>
+            <button type="button" class="btn btn-danger">Clear</button>
         </form>
     </div>
     <script src="script.js"></script>
